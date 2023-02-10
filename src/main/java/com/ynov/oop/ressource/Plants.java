@@ -17,5 +17,6 @@ public class Plants {
     }
     public Plants () {
         this.value = 0;
+        this.production = 0;
     }
 }

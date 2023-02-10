@@ -17,5 +17,6 @@ public class Credits {
     }
     public Credits (){
         this.value = 2;
+        this.production = 1;
     }
 }

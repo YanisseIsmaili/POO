@@ -16,4 +16,17 @@ public class Warehouse {
     this.plants.produce();
     this.steel.produce();
     }
+
+    public Credits getCredits() {
+        return this.credits;
+    }
+
+    public Plants getPlants() {
+        return this.plants;
+    }
+
+    public Steel getSteel() {
+        return this.steel;
+    }
+
 }

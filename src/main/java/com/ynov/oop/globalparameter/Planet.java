@@ -14,5 +14,13 @@ public class Planet {
         return this.oxygen.isMax() && this.temperature.isMax();
 
     }
+
+    public Oxygen getOxygen() {
+        return this.oxygen;
+    }
+
+    public Temperature getTemperature() {
+        return this.temperature;
+    }
 }
 
