@@ -15,4 +15,7 @@ public class Plants {
     public void produce (){
         this.value = this.value + this.production ;
     }
+    public Plants () {
+        this.value = 0;
+    }
 }

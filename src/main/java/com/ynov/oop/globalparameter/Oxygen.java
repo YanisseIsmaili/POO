@@ -2,14 +2,18 @@ package com.ynov.oop.globalparameter;
 
 public class Oxygen {
     private int value;
-    private int production;
 
-    public void use(int oxygenuse){
-        this.value = this.value - oxygenuse ;
+    public void increase (int increment){
+        this.value = this.value + increment ;
     }
 
-    public void produce (){
-        this.value = this.value + this.production ;
+    public boolean isMax (){
+        return this.value >= 14; 
     }
+    
+    public Oxygen () {
+        this.value = 0;
+    }
+
 }
 

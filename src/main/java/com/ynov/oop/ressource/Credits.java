@@ -15,4 +15,7 @@ public class Credits {
     public void produce (){
         this.value = this.value + this.production ;
     }
+    public Credits (){
+        this.value = 2;
+    }
 }

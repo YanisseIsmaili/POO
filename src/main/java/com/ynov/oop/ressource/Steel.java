@@ -16,4 +16,7 @@ public class Steel {
         this.value = this.value + this.production ;
     }
     
+    public Steel (){
+        this.value = 1;
+    }
 }
