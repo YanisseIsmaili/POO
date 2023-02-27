@@ -5,13 +5,10 @@ import com.ynov.oop.ressource.Warehouse;
 import com.ynov.oop.ressource.Cost;
 
 public class Nuclearplant {
-    private int cost;
-    
-    public Nuclearplant(Warehouse w) {
-        
-    }
+
+    public static Cost constructionCost = new Cost(4, 0, 2);
 
     public void effect(Planet p){
-
+        p.getTemperature().increase(2);
     }
 }

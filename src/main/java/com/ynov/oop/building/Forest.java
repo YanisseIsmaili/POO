@@ -5,14 +5,11 @@ import com.ynov.oop.globalparameter.Planet;
 import com.ynov.oop.ressource.Cost;
 
 public class Forest { 
-   private int cost;
 
-   public Forest (Warehouse w) {
-
-   }
+   public static Cost constructionCost = new Cost(0, 3, 0);
 
    public void effect (Planet p) {
-
+     p.getOxygen().increase(1);
    }
 
     /* 

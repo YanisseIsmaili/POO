@@ -4,14 +4,10 @@ import com.ynov.oop.ressource.Warehouse;
 import com.ynov.oop.ressource.Cost;
 
 public class Mine {
-    private int cost;
     
-    public Mine (Warehouse w) {
-        
-    }
+    public static Cost constructionCost = new Cost(1, 0, 0);
 
     public void effect(Warehouse w){
-
+        w.getSteel().increase(1);
     }
-
 }

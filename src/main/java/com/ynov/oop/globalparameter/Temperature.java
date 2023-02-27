@@ -1,7 +1,14 @@
 package com.ynov.oop.globalparameter;
 
-public class Temperature {
+import com.ynov.oop.CheckVictoriCondition;
+
+public class Temperature implements CheckVictoriCondition{
     private int value;
+   
+    @Override
+    public boolean isWin(){
+        return this.value <= 8;
+    }
 
     public void increase (int increment){
         this.value = this.value + increment ;

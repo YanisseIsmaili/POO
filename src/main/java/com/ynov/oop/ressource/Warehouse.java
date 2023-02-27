@@ -1,6 +1,8 @@
 package com.ynov.oop.ressource;
 
-public class Warehouse {
+import com.ynov.oop.Endturnaction;
+
+public class Warehouse implements Endturnaction {
     private Credits credits; 
     private Plants plants;
     private Steel steel;
@@ -11,12 +13,12 @@ public class Warehouse {
         this.steel = s;
     }
 
-    public void produce(){
-    this.credits.produce();
-    this.plants.produce();
-    this.steel.produce();
+    public void endTurnAction(){
+    this.credits.endTurnAction();
+    this.plants.endTurnAction();
+    this.steel.endTurnAction();
     }
-
+ 
     public Credits getCredits() {
         return this.credits;
     }
