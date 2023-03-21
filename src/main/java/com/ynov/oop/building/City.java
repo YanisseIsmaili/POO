@@ -3,7 +3,11 @@ package com.ynov.oop.building;
 import com.ynov.oop.ressource.Cost;
 import com.ynov.oop.ressource.ResourceStockpile;
 
-public class City {
+public class City extends Building {
+
+    public City(){
+        super("AH! des maison");
+    }
 
     // we can use this one everywhere
     public static Cost constructionCost = new Cost(1,0,0);

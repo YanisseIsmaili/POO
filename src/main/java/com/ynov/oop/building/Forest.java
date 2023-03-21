@@ -4,7 +4,11 @@ import com.ynov.oop.globalparameter.HaveGlobalParameter;
 import com.ynov.oop.ressource.Cost;
 
 
-public class Forest {
+public class Forest extends Building {
+
+    public Forest(){
+        super("le truc avec plein de tree");
+    }
 
     public static Cost constructionCost = new Cost(0,0,3);
 
