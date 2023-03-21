@@ -1,19 +1,15 @@
 package com.ynov.oop.building;
 
-import com.ynov.oop.ressource.Warehouse;
-import com.ynov.oop.globalparameter.Planet;
+import com.ynov.oop.globalparameter.HaveGlobalParameter;
 import com.ynov.oop.ressource.Cost;
 
-public class Forest { 
 
-   public static Cost constructionCost = new Cost(0, 3, 0);
+public class Forest {
 
-   public void effect (Planet p) {
-     p.getOxygen().increase(1);
-   }
+    public static Cost constructionCost = new Cost(0,0,3);
 
-    /* 
-     * cout 3 plants
-     * gain d'oxygen
-     */
+    //add 1 oxygen in the total of oxygen
+    public void effect(HaveGlobalParameter haveGlobalParameter){
+        haveGlobalParameter.getOxygen().increaseOxygen(1);
+    }
 }

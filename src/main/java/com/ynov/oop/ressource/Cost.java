@@ -1,14 +1,14 @@
 package com.ynov.oop.ressource;
 
-public class Cost { // cost et just une classe qui vas regrouper differrante ariable dans une seul classe
-
+public class Cost {
+    public int steel;
     public int credits;
     public int plants;
-    public int steel;
 
-    public Cost(int credits, int plants, int steel){
+    //constructor
+    public Cost (int steel,int credits,int plants){
+        this.steel = steel;
         this.credits = credits;
         this.plants = plants;
-        this.steel = steel;
-    } 
+    }
 }
